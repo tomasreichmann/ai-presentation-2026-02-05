@@ -35,13 +35,15 @@
 - "AI nastroje v prikazove radce" appears twice; replace one with a contrasting example (e.g., "AI nastroje v prohlizeci" or "AI v mobilu").
 - Ensure consistent terminology for prompts (system vs. user), and reuse the same Czech terms throughout.
 
-## Best-practice alignment (sources)
-- Keep slides focused on one key idea and reduce text density to lower cognitive load. This aligns with general slide design guidance from teaching and writing resources.
-- Use visuals and spatial proximity between labels and images to avoid split-attention; integrate related text and visuals on the same slide.
-- Reinforce critical evaluation and retrieval-based verification when discussing hallucinations and bias.
+## Best-practice alignment (with sources)
+- Keep slides focused on one key idea and reduce text density to lower extraneous cognitive load. This aligns with multimedia learning principles on coherence and redundancy.
+- Use visuals and keep labels near related graphics to avoid split-attention and improve spatial contiguity.
+- Use explicit signaling (headings, cue words, structure) to guide attention and reinforce organization.
+- Reinforce critical evaluation and risk awareness when discussing hallucinations and bias; anchor this in general AI risk guidance.
 
-## Suggested references (for your own validation)
-- Multimedia learning and split-attention principle (cognitive load theory)
-- Slide design guidance from university presentation skill guides
-- AI hallucination and bias guidance from university teaching resources
+## Sources consulted
+- Cambridge Handbook of Multimedia Learning (coherence, signaling, redundancy, spatial and temporal contiguity principles): https://www.cambridge.org/core/books/cambridge-handbook-of-multimedia-learning/principles-for-reducing-extraneous-processing-in-multimedia-learning-coherence-signaling-redundancy-spatial-contiguity-and-temporal-contiguity-principles/C98AB3A6CE760DD63C048936EA0B3B44
+- University of Delaware instructional design guide (multimedia learning principles table): https://www1.udel.edu/edtech/design/modules/02-learning.html
+- Stanford ENGR110/210 slideshow tips (reduce text, use strong visuals): https://web.stanford.edu/class/engr110/2023/slideshow.html
+- NIST AI Risk Management Framework (risk, trustworthiness, evaluation): https://www.nist.gov/itl/ai-risk-management-framework
 
