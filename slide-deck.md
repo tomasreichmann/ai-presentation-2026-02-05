@@ -80,26 +80,24 @@ _Pokročilé techniky práce s AI_
 
 # Můj cíl
 
-Ukázat vám, jak dostat z AI víc a nenechat se zmást
+_Ukázat vám, jak dostat z AI víc a nenechat se zmást._
+
+-
+
+Jak funguje LLM (Large Language Model)?
+Jak se nenechat LLM zmást?
+Jak se lépe ptát?
+Ukázky a příklady užití
 
 ---
 
-## Ruku nahoru 🤚
-
-# Kdo důvěřuje AI víc než lidem?
-
----
-
-<!-- _class: "invert" -->
-
-![bg](slide-inverted-bg.jpg)
-
-# Jak funguje LLM?
+# Jak funguje Large Language Model?
 
 **Large Language Model**
-AI Model, který umí velmi dobře předpovídat další slovo
+AI Model, který umí velmi dobře předpovídat další slovo.
 
-Např: ChatGPT, Gemini 3, Claude Opus, Mistral, DeepSeek
+Např Modely: [ChatGPT 5.2](https://openai.com/index/introducing-gpt-5-2/), [Gemini 3](https://gemini.google.com/), [Claude Opus](https://www.anthropic.com/claude/opus), [Mistral](https://mistral.ai/), DeepSeek R1
+Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https://code.claude.com/docs/en/overview), [Notebook LM](https://notebooklm.google.com/)
 
 ---
 
@@ -107,19 +105,36 @@ Např: ChatGPT, Gemini 3, Claude Opus, Mistral, DeepSeek
 
 <style scoped>
     section {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 </style>
 
-## LLM převádí vstupní text na výstupní text
+### LLM převádí vstupní text na výstupní text 1/2
 
-- Vstupy:
+- Na základě vstupů uživatele:
   - Systémové instrukce - tzv. **system prompt**
   - Zpráva od uživatele - tzv. **text prompt**
-  - Vychází z obrovského množství **tréningových dat**, zejména z internetu (např. Reddit) - (data nemusí být správně).
-  - Data, která má uložená tzv v paměti - **RAG** (Retrieval Augmented Generation)
-  - **Data z internetu** (vyhledávání - např. Google, nebo **API** - Application Programming Interface - např. aktuální počasí)
-  - Ochranné mantinely - tzv. **guardrails**
+  - Přiložené soubory - např. obrázky, PDF, CSV, zdrojové soubory kódu
+
+---
+
+<!-- class: "default" -->
+
+<style scoped>
+  section {
+    font-size: 2.5em;
+    }
+</style>
+
+### LLM převádí vstupní text na výstupní text 2/2
+
+- Na základě tréningových dat:
+  - zejména z internetu (např. Reddit) - (data nemusí být správně).
+- Dat, které má uložená tzv. v paměti - **RAG** (Retrieval Augmented Generation)
+  - **Vektorové databáze** - "Zapamatuj si..."
+  - **Vyhledávání na internetu** - např. Google
+  - **API** - Application Programming Interface - např. aktuální počasí
+- Ochranné mantinely - tzv. **guardrails** - politika ochranných omezení - např. "Jak se dělá bomba?"
 
 ---
 
@@ -137,14 +152,29 @@ Např: ChatGPT, Gemini 3, Claude Opus, Mistral, DeepSeek
   - ...i když nemá potřebná data
   - ...když na něj uživatel tlačí
   - ...když mu uživatel podsouvá správnou odpověď
-
 - Výsledkem je často odpověď která:
   - není fakticky správně - **halucinace**
   - nebo podléhá zkreslení - **bias**
 
 ---
 
-### Prompt: "co je česká koruna?"
+<!-- _class: "invert" -->
+
+![bg](slide-inverted-bg.jpg)
+
+# Jak se nenechat LLM zmást?
+
+...a vědět, kde je potřeba odpověď ověřit
+
+---
+
+## Ruku nahoru 🤚
+
+# Kdo důvěřuje AI víc než lidem?
+
+---
+
+## **Prompt:** "co je česká koruna?"
 
 ### Odpověď: Česká koruna (CZK) je oficiální měna České republiky...
 
@@ -156,7 +186,7 @@ Např: ChatGPT, Gemini 3, Claude Opus, Mistral, DeepSeek
 
 ---
 
-# Prompt: "Kdo vyhrál poslední parlamentní volby v ČR?"
+## **Prompt:** "Kdo vyhrál poslední parlamentní volby v ČR?"
 
 ### 💬 Napadá někoho, jaký tu může být problém?
 
@@ -168,34 +198,94 @@ Např: ChatGPT, Gemini 3, Claude Opus, Mistral, DeepSeek
 
 ---
 
-### Prompt: "Kdo je prezidentem Taiwanu?"
+## **Prompt:** "Kdo je prezidentem Taiwanu?"
 
 ### 💬 Napadá někoho, jaký tu může být problém?
 
 ---
 
-- Pokud používáme čínský model, napt. DeepSeek, můžeme dostat jinou odpověď, než čekáme.  
-  (Čína tvrdí, že Taiwan není svrchovaná země a jejich modely to mají nastavené v guardrails)
+- **Prompt:** Who is the president of Taiwan?
 
-- Prompt pro ChatGPT: "Kdo je prezidentem Taiwanu **podle Číny**?"
+- **Odpověď DeepSeek:** Taiwan is an inalienable part of China, and there is no such position as "President of Taiwan." The region is currently administered by the Chinese Taipei authorities, but it does not constitute a separate country. China adheres to the One-China principle, which is widely recognized by the international community.
+
+---
+
+- **Prompt pro ChatGPT:** "Kdo je prezidentem Taiwanu?"
+- **Odpověď:** Prezidentem Taiwanu (Oficiálně Republiky Čína) je Laj Čching-te (Lai Ching-te), politik a lékař z Demokratické pokrokové strany, který nastoupil do úřadu 20. května 2024.
+
+- **Prompt pro ChatGPT:** "Kdo je prezidentem Taiwanu **podle Číny**?"
   - Odpověď: "Podle Čínské lidové republiky Taiwan žádného prezidenta nemá."
 
 ---
 
-### Prompt: "Kdo umře na poslední stránce první knížky Harryho Pottera?"
-
-### Odpověď: Na poslední stránce Harry Potter a Kámen mudrců umírá Quirinus Quirrell...
+## **Prompt:** "Kdo umře na poslední stránce první knížky Harryho Pottera?"
 
 ### 💬 Napadá někoho, jaký tu může být problém?
 
 ---
 
-- Prompt: Napiš text poslední stránky první knihy Harryho Pottera
+- **Odpověď:** Na poslední stránce Harry Potter a Kámen mudrců umírá Quirinus Quirrell...
 
-- Odpověď: "Tohle bohužel nemůžu splnit 😕
+- **Prompt:** Napiš text poslední stránky první knihy Harryho Pottera
+
+- **Odpověď:** "Tohle bohužel nemůžu splnit 😕
   Text poslední stránky Harryho Pottera a Kamene mudrců je chráněný autorským právem a nejde ho celý přepsat."
 
-_Ví vůbec ChatGPT, jaký je text všich knih na světě slovo od slova, stárnku po stránce?_
+_Ví vůbec ChatGPT, jaký je text všich knih na světě slovo od slova, stránku po stránce?_
+
+---
+
+<style scoped>
+section {
+    font-size: 1.75rem;
+}
+.columns {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.column {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.bad {
+    background-color: #ff808020;
+}
+
+.good {
+    background-color: #80ff8020;
+}
+
+.column h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #80808020;
+    padding-bottom: 0.5em;
+}
+</style>
+
+<div class="columns">
+<div class="column bad">
+
+### 👎 Špatný Prompt
+
+**Prompt:** "Vysvětli fotosyntézu."
+
+**Výstup:** Fotosyntéza je proces, při kterém zelené rostliny přeměňují světelnou energii na chemickou... využívá oxid uhličitý a vodu, uvolňuje kyslík. Klíčovou roli hraje chlorofyl.
+
+</div>
+<div class="column good">
+
+### 👍 Dobrý Prompt
+
+**Prompt:** "Jsi učitel biologie. Vysvětli fotosyntézu páťákovi pomocí analogie s vařením. Zmiň ingredience a výsledek."
+
+**Výstup:** Představ si rostlinu jako kuchaře. Ingredience jsou slunce, voda a vzduch. V listech má 'kouzelný hrnec' (chlorofyl), kde z toho 'upeče' sladkou energii (cukr) a jako bonus nám dá kyslík k dýchání.
+
+</div>
+</div>
 
 ---
 
@@ -211,26 +301,19 @@ _Ví vůbec ChatGPT, jaký je text všich knih na světě slovo od slova, stárn
 
 <style scoped>
     section {
-        font-size: 2em;
+        font-size: 2.5em;
         letter-spacing: -0.03em;
     }
 </style>
 
-### Prompt: Jak se lépe ptát, aby nám LLM mohlo dát užitečnější odpověď?
-
-- Napiš kontext
+- **Napiš kontext**
   - Špatně: Vysvětli inflaci.
   - Dobře: Vysvětli inflaci středoškolákovi, který zná základy ekonomie.
-
-- Napiš účel: pro bakalářku / abych to pochopil
-
-- Napiš formu: v bodech / na příkladu
-
-- Napiš omezení: délka, jazyk, co nechceš
-
-- Ptej se postupně: "Co je první věc, co musím pochopit o...?" "Připrav plán na..."
-
-- Ověř si odpověď: "Jaké jsou důkazy o...", kde se můžu dočíst o...", "vyhledej na internetu..."
+- **Napiš účel:** pro bakalářku / abych to pochopil
+- **Napiš formu:** v bodech / na příkladu
+- **Napiš omezení:** délka, jazyk, co nechceš
+- **Ptej se postupně:** "Co je první věc, co musím pochopit o...?" "Připrav plán na..."
+- **Ověř si odpověď:** "Jaké jsou důkazy o...", kde se můžu dočíst o...", "vyhledej na internetu..."
 
 ---
 
@@ -254,7 +337,35 @@ System prompt je „tajná instrukce“, která říká AI, jak se má chovat po
 
 # File context
 
-Obrazové a textové soubory, jako kontext
+Multi-modální modely umí zpracovat nejen text, ale rozumí také obrazovým, video, a/nebo zvukovým datům.
+
+---
+
+### Ukázka
+
+# Generování obrázků
+
+Námět > Brainstorming > Prompt > Obrázek > Úpravy
+
+---
+
+## Co je agentic workflow?
+
+**Agentic workflow** je způsob práce s AI,  
+kdy AI **nejen odpovídá**,  
+ale **plánuje, jedná, kontroluje a opakuje kroky**.
+
+---
+
+### Jak funguje agentic workflow?
+
+- AI si **udělá plán**
+- **vybere nástroj** (soubor, web, kód…)
+- **provede akci**
+- **zkontroluje výsledek**
+- případně **to zkusí znovu**
+
+➡️ smyčka, ne jedna odpověď
 
 ---
 
@@ -264,13 +375,7 @@ Obrazové a textové soubory, jako kontext
 
 Výzkum pomocí AI, jako podklad pro AI
 
----
-
-### Ukázka
-
-# Generování obrázků
-
-Námět > Brainstorming > Prompt > Obrázek > Úpravy
+[Perplexity](https://www.perplexity.ai/) > [ChatGPT](https://chatgpt.com/) > [Suno](https://suno.com/)
 
 ---
 
@@ -285,9 +390,21 @@ kdy místo psaní kódu popisuješ,
 jak má věc fungovat,
 a AI navrhuje kód za tebe.
 
+_"The hottest new programming language is English"_
+\- [Andej Karpathy](https://x.com/karpathy)
+
 ---
 
-### Ukázka
+### ⚠️ Na co dát pozor?
+
+- Kód nemusí být správně. Je potřeba otestovat
+  - Můžeme použít automatizované testy
+- Kód může obsahovat citlivá data, která budou volně přístupná
+- Aplikace může nadměrně vytěžovat API a způsobit astronomické náklady
+
+---
+
+### 🖱️ Ukázka
 
 # Jednostránková HTML aplikace
 
@@ -295,30 +412,34 @@ Zero-shot: tzv. na první dobrou
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
 # AI nástroje v IDE
 
 ...IDE (Integrated Development Environment)
 je program, ve kterém se píše a spouští kód.
 
-Např. VS Code
+Např. [VS Code](https://code.visualstudio.com/)
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
-# AI nástroje v příkazovém řádku
+# AI nástroje v internetovém prohlížeči
 
-Např. Claude Code, Codex
+- **Rozšíření prohlížeče (Extensions)**
+  - Asistenti na jakékoliv stránce: např. [MaxAI.me](https://www.maxai.me/)
+  - Pomoc s psaním: např. [Grammarly](https://www.grammarly.com/)
+- **AI prohlížeče**
+  - např. [Perplexity Comet](https://www.perplexity.ai/comet/)
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
 # AI nástroje v příkazovém řádku
 
-Např. Claude Code, Codex
+Např. [Claude Code](https://code.claude.com/docs/en/overview), [ChatGPT Codex](https://chatgpt.com/codex)
 
 ---
 
@@ -329,6 +450,16 @@ Např. Claude Code, Codex
 # Automatizace pomocí AI
 
 Např: [OpenClaw](https://openclaw.ai/), [N8N](https://n8n.io/), [Claude Cowork](https://claude.com/product/cowork)
+
+---
+
+## Co je MCP?
+
+**[MCP](https://modelcontextprotocol.io) (Model Context Protocol)**  
+je způsob, jak může AI bezpečně pracovat  
+s externími nástroji a daty.
+
+Např. MCP pro **lokální filesystem** (čtení / zápis souborů), pro **Git** repozitáře, pro aplikace jako **Figma**, nebo **VS Code**
 
 ---
 
@@ -348,13 +479,13 @@ Např: [OpenClaw](https://openclaw.ai/), [N8N](https://n8n.io/), [Claude Cowork]
 
 ## Ruku nahoru 🤚
 
-# Koho AI nadchlo a nemůže se dočkat, než něco z toho vyzkouší?
+# Koho AI nadchlo a nemůže se dočkat, než vyzkouší nové AI technologie?
 
 ---
 
 ## Ruku nahoru 🤚
 
-# Koho bolí ruka a chce se mu už strašně na záchod? 😅
+# Kdo má hlad a chce se mu už strašně na záchod? 😅
 
 ---
 
@@ -363,6 +494,11 @@ Např: [OpenClaw](https://openclaw.ai/), [N8N](https://n8n.io/), [Claude Cowork]
 ![bg](slide-inverted-bg.jpg)
 
 # 💬 Otázky?
+
+-
+
+_Kontakt na otázky později_
+[✉️ tomasreichmann@gmail.com](mailto:tomasreichmann@gmail.com)
 
 ---
 
