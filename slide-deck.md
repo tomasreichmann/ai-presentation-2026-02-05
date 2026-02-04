@@ -16,6 +16,13 @@ footer: © Tomáš Reichmann 2026
     section h1 {
         line-height: 1.1;
     }
+    section h2 {
+        color: #000030a0;
+    }
+    section h3 {
+        color: #000030c0;
+    }
+    .icon { font-size: 3em }
 </style>
 
 <style scoped>
@@ -32,7 +39,7 @@ footer: © Tomáš Reichmann 2026
 
 ![bg](intro.jpg)
 
-# Jak mluvit s umělou inteligencí chytře
+# Jak mluvit s umělou inteligencí _chytře_
 
 _Pokročilé techniky práce s AI_
 
@@ -78,7 +85,7 @@ _Pokročilé techniky práce s AI_
 
 ![bg](slide-inverted-bg.jpg)
 
-# Můj cíl
+# 🎯 Můj cíl
 
 _Ukázat vám, jak dostat z AI víc a nenechat se zmást._
 
@@ -91,7 +98,7 @@ Ukázky a příklady užití
 
 ---
 
-# Jak funguje Large Language Model?
+# 🧠 Jak funguje Large Language Model?
 
 **Large Language Model**
 AI Model, který umí velmi dobře předpovídat další slovo.
@@ -104,8 +111,8 @@ Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https
 <!-- class: "default" -->
 
 <style scoped>
-    section {
-        font-size: 2.5em;
+  section {
+    font-size: 2.5em;
     }
 </style>
 
@@ -140,7 +147,7 @@ Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https
 
 <style scoped>
     section {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 </style>
 
@@ -161,6 +168,8 @@ Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https
 <!-- _class: "invert" -->
 
 ![bg](slide-inverted-bg.jpg)
+
+<span class="icon">🤥</span>
 
 # Jak se nenechat LLM zmást?
 
@@ -293,6 +302,8 @@ section {
 
 ![bg](slide-inverted-bg.jpg)
 
+<span class="icon">🤔</span>
+
 # Jak se lépe ptát?
 
 ...aby nám LLM mohlo dát užitečnější odpověď
@@ -321,35 +332,39 @@ section {
 
 ![bg](slide-inverted-bg.jpg)
 
+<span class="icon">🖱️</span>
+
 # Praktické ukázky
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
-# System prompt
+# ⚙️ System prompt
 
 System prompt je „tajná instrukce“, která říká AI, jak se má chovat po celou dobu konverzace.
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
-# File context
+# 📁 File context
 
-Multi-modální modely umí zpracovat nejen text, ale rozumí také obrazovým, video, a/nebo zvukovým datům.
+Multi-modální modely umí zpracovat nejen text, ale rozumí také obrazovým, video, a/nebo zvukovým souborům.
+
+[Fotosyntéza - Notebook LM](https://notebooklm.google.com/notebook/9545ac19-bc8b-4334-97da-eacc3586671b)
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
-# Generování obrázků
+# 🖼️ Generování obrázků
 
 Námět > Brainstorming > Prompt > Obrázek > Úpravy
 
 ---
 
-## Co je agentic workflow?
+## Co je "agentic workflow"?
 
 **Agentic workflow** je způsob práce s AI,  
 kdy AI **nejen odpovídá**,  
@@ -369,13 +384,14 @@ ale **plánuje, jedná, kontroluje a opakuje kroky**.
 
 ---
 
-### Ukázka
+### 🖱️ Ukázka
 
-# Research mode
+# 👨‍🔬 Research mode
 
 Výzkum pomocí AI, jako podklad pro AI
 
-[Perplexity](https://www.perplexity.ai/) > [ChatGPT](https://chatgpt.com/) > [Suno](https://suno.com/)
+[Perplexity](https://www.perplexity.ai/search/check-the-list-of-drum-bass-hi-mfmsdSmRTd2.RMK8Ollhxw#0) > [Gemini 3](https://gemini.google.com/share/a2a9725ac9f5) >  
+[Suno DnB Drum loop](https://suno.com/s/wElqwydfEXi8uB0c) > [Suno DnB Banger](https://suno.com/s/wVyHsXzIt33iNknS)
 
 ---
 
@@ -383,7 +399,7 @@ Výzkum pomocí AI, jako podklad pro AI
 
 ![bg](slide-inverted-bg.jpg)
 
-# Vibe-Coding
+# 😎 Vibe-Coding
 
 ...je způsob programování,
 kdy místo psaní kódu popisuješ,
@@ -406,15 +422,17 @@ _"The hottest new programming language is English"_
 
 ### 🖱️ Ukázka
 
-# Jednostránková HTML aplikace
+# 🌐 Jednostránková HTML aplikace
 
 Zero-shot: tzv. na první dobrou
+
+[Demo Poster Filmový Večer](https://chatgpt.com/share/69832069-0304-8006-aa56-d46274039c7a)
 
 ---
 
 ### 🖱️ Ukázka
 
-# AI nástroje v IDE
+# 💻 AI nástroje v IDE
 
 ...IDE (Integrated Development Environment)
 je program, ve kterém se píše a spouští kód.
@@ -425,21 +443,15 @@ Např. [VS Code](https://code.visualstudio.com/)
 
 ### 🖱️ Ukázka
 
-# AI nástroje v internetovém prohlížeči
-
-- **Rozšíření prohlížeče (Extensions)**
-  - Asistenti na jakékoliv stránce: např. [MaxAI.me](https://www.maxai.me/)
-  - Pomoc s psaním: např. [Grammarly](https://www.grammarly.com/)
-- **AI prohlížeče**
-  - např. [Perplexity Comet](https://www.perplexity.ai/comet/)
-
----
-
-### 🖱️ Ukázka
-
-# AI nástroje v příkazovém řádku
+# ⌨️ AI nástroje v příkazovém řádku
 
 Např. [Claude Code](https://code.claude.com/docs/en/overview), [ChatGPT Codex](https://chatgpt.com/codex)
+
+<!--
+Notes:
+- Demo option 1 (visual): "Vymysli storyboard na 10s reels video o tématu X a vygeneruj 3 klíčové obrázky." Rychlá změna stylu (retro vs. anime).
+- Demo option 2 (visual): "Navrhni obal na sešit/diář a vytvoř 2–3 varianty s jiným moodem." Nechat třídu hlasovat.
+-->
 
 ---
 
@@ -447,13 +459,23 @@ Např. [Claude Code](https://code.claude.com/docs/en/overview), [ChatGPT Codex](
 
 ![bg](slide-inverted-bg.jpg)
 
-# Automatizace pomocí AI
+<span class="icon">🧰</span>
 
-Např: [OpenClaw](https://openclaw.ai/), [N8N](https://n8n.io/), [Claude Cowork](https://claude.com/product/cowork)
+# Pokročilé AI nástroje
 
 ---
 
-## Co je MCP?
+### AI nástroje v internetovém prohlížeči
+
+- **AI prohlížeče**
+  - např. [Perplexity Comet](https://www.perplexity.ai/comet/)
+- **Rozšíření prohlížeče (Extensions)**
+  - Asistenti na jakékoliv stránce: např. [MaxAI.me](https://www.maxai.me/)
+  - Pomoc s psaním: např. [Grammarly](https://www.grammarly.com/)
+
+---
+
+## 🔗 Co je MCP?
 
 **[MCP](https://modelcontextprotocol.io) (Model Context Protocol)**  
 je způsob, jak může AI bezpečně pracovat  
@@ -463,9 +485,19 @@ Např. MCP pro **lokální filesystem** (čtení / zápis souborů), pro **Git**
 
 ---
 
+<span class="icon">🤖</span>
+
+# Automatizace pomocí AI
+
+Např: [OpenClaw](https://openclaw.ai/), [N8N](https://n8n.io/), [Claude Cowork](https://claude.com/product/cowork)
+
+---
+
 <!-- _class: "invert" -->
 
 ![bg](slide-inverted-bg.jpg)
+
+<span class="icon">⌛</span>
 
 # Na závěr
 
@@ -493,17 +525,17 @@ Např. MCP pro **lokální filesystem** (čtení / zápis souborů), pro **Git**
 
 ![bg](slide-inverted-bg.jpg)
 
-# 💬 Otázky?
-
--
+# 🙋💬 Otázky?
 
 _Kontakt na otázky později_
 [✉️ tomasreichmann@gmail.com](mailto:tomasreichmann@gmail.com)
 
+![w:200px](qr-email.png)
+
 ---
 
-### Děkuju za pozornost
+### 🙏 Děkuju za pozornost!
 
 Prompt na rozloučenou
 
-#### _"Na základě toho, co o mě víš, napiš 5 věcí, které by mi pomohly, abych byl v životě šťastnější. Zeptej se mě na otázky, které ti doplní informace, abys mi mohl dát lepší odpověď"_
+#### _"Na základě toho, co o mě víš, napiš 5 věcí, které by mi pomohly, abych byl v životě šťastnější. Nejdřív se mě zeptej se mě na otázky, které ti doplní informace, abys mi mohl dát lepší odpověď"_
