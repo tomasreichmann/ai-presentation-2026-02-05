@@ -23,6 +23,7 @@ footer: © Tomáš Reichmann 2026
         color: #000030c0;
     }
     .icon { font-size: 3em }
+    section.smaller { font-size: 2em }
 </style>
 
 <style scoped>
@@ -45,7 +46,7 @@ _Pokročilé techniky práce s AI_
 
 ---
 
-<!-- backgroundImage: url('slide-bg.png') -->
+<!-- backgroundImage: url('slide-bg.jpg') -->
 
 ## Ruku nahoru 🤚
 
@@ -81,6 +82,18 @@ _Pokročilé techniky práce s AI_
 
 ---
 
+# Ahoj! 👋
+
+
+## Já jsem Tomáš Reichmann
+
+Lead Game UI Developer
+
+_Můj tým vytváří uživatelské rozhraní pro World of Tanks a World of Tanks Heat._
+
+
+---
+
 <!-- _class: "invert" -->
 
 ![bg](slide-inverted-bg.jpg)
@@ -98,23 +111,26 @@ Ukázky a příklady užití
 
 ---
 
+# Otázky 🙋
+
+✅ Prezentaci dostanete
+👌 Fotky
+👌 Jídlo a pití
+👌 💩
+
+---
+
 # 🧠 Jak funguje Large Language Model?
 
 **Large Language Model**
 AI Model, který umí velmi dobře předpovídat další slovo.
 
-Např Modely: [ChatGPT 5.2](https://openai.com/index/introducing-gpt-5-2/), [Gemini 3](https://gemini.google.com/), [Claude Opus](https://www.anthropic.com/claude/opus), [Mistral](https://mistral.ai/), DeepSeek R1
+Např Modely: [ChatGPT 5.2](https://openai.com/index/introducing-gpt-5-2/), [Gemini 3](https://gemini.google.com/), [Claude Opus](https://www.anthropic.com/claude/opus), [Mistral](https://mistral.ai/), [DeepSeek R1](https://chat.deepseek.com/)
 Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https://code.claude.com/docs/en/overview), [Notebook LM](https://notebooklm.google.com/)
 
 ---
 
-<!-- class: "default" -->
-
-<style scoped>
-  section {
-    font-size: 2.5em;
-    }
-</style>
+<!-- class: "smaller" -->
 
 ### LLM převádí vstupní text na výstupní text 1/2
 
@@ -125,13 +141,7 @@ Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https
 
 ---
 
-<!-- class: "default" -->
-
-<style scoped>
-  section {
-    font-size: 2.5em;
-    }
-</style>
+<!-- class: "smaller" -->
 
 ### LLM převádí vstupní text na výstupní text 2/2
 
@@ -145,11 +155,7 @@ Produkty: [ChatGPT Aplikace](https://chatgpt.com/download/), [Claude Code](https
 
 ---
 
-<style scoped>
-    section {
-        font-size: 2.5em;
-    }
-</style>
+<!-- class: "smaller" -->
 
 ### LLM generuje výstupní text tak, že se snaží předpovídat další slovo
 
@@ -244,6 +250,18 @@ _Ví vůbec ChatGPT, jaký je text všich knih na světě slovo od slova, strán
 
 ---
 
+<!-- _class: "invert" -->
+
+![bg](slide-inverted-bg.jpg)
+
+<span class="icon">🤔</span>
+
+# Jak se lépe ptát?
+
+...aby nám LLM mohlo dát užitečnější odpověď
+
+---
+
 <style scoped>
 section {
     font-size: 1.75rem;
@@ -298,18 +316,6 @@ section {
 
 ---
 
-<!-- _class: "invert" -->
-
-![bg](slide-inverted-bg.jpg)
-
-<span class="icon">🤔</span>
-
-# Jak se lépe ptát?
-
-...aby nám LLM mohlo dát užitečnější odpověď
-
----
-
 <style scoped>
     section {
         font-size: 2.5em;
@@ -361,6 +367,8 @@ Multi-modální modely umí zpracovat nejen text, ale rozumí také obrazovým, 
 # 🖼️ Generování obrázků
 
 Námět > Brainstorming > Prompt > Obrázek > Úpravy
+
+[Příklad](https://chatgpt.com/share/698472ea-8b0c-8006-ab42-317bb23a076c)
 
 ---
 
@@ -427,6 +435,8 @@ _"The hottest new programming language is English"_
 Zero-shot: tzv. na první dobrou
 
 [Demo Poster Filmový Večer](https://chatgpt.com/share/69832069-0304-8006-aa56-d46274039c7a)
+[Výsledek](./filmovy_vecer.html)
+[Výsledek po úpravě](./filmovy_vecer.html)
 
 ---
 
