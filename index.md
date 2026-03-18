@@ -44,6 +44,8 @@ footer: © Tomáš Reichmann 2026
 
 _Pokročilé techniky práce s AI_
 
+_[English version](./index-en.html)_
+
 ---
 
 <!-- backgroundImage: url('slide-bg.jpg') -->
